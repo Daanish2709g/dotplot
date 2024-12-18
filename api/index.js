@@ -2,7 +2,7 @@ var app = require('express')();
 var project = require('./routes/project');
 var render = require('./routes/render');
 var bodyParser = require('body-parser');
-
+  
 app.use(function(req, res, next) {
   //TODO tighten
   res.header("Access-Control-Allow-Origin", "*");
